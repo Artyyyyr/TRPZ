@@ -12,7 +12,7 @@ namespace DAL.Repositories.imp
 {
     public class InventoryRepository : BaseRepository<Inventory>, IInventoryRepository
     {
-        internal InventoryRepository(MyBContext context) : base(context)
+        internal InventoryRepository(MyContext context) : base(context)
         {
         }
     }
