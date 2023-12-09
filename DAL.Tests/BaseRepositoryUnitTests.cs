@@ -37,7 +37,6 @@ namespace DAL.Tests
             repository.Create(expectedDepartment);
             // Assert
             mockDbSet.Verify(dbSet => dbSet.Add(expectedDepartment), Times.Once());
-            // mockDbSet.Verify(dbSet => dbSet.Add(expectedDepartment), Times.Never());
         }
         [Fact]
         public void Get_InputId_CalledFindMethodOfDBSetWithCorrectId()
