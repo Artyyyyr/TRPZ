@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BLL.Services.Impl
 {
-    internal interface IDepartmentService
+    public interface IDepartmentService
     {
         IEnumerable<DepartmentDTO> GetDepartments(int page);
     }

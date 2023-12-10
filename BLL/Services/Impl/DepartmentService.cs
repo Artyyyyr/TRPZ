@@ -41,12 +41,10 @@ namespace BLL.Services.Impl
             var departmentsEntities = _database.Departments
                 .Find(z => z.DepartmentId == departmentId, pageNumber, pageSize);
 
-            var mapper =
-            new MapperConfiguration(
+            var mapper = new MapperConfiguration(
             cfg => cfg.CreateMap<Department, DepartmentDTO>()
             ).CreateMapper();
-            var departmentDto =
-            mapper
+            var departmentDto = mapper
             .Map<IEnumerable<Department>, List<DepartmentDTO>>(
             departmentsEntities);
             return departmentDto;
