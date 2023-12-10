@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Entities
 {
-    public class Building
+    public class BuildingDTO
     {
         public int BuildingId { get; set; }
         public string Name { get; set; }
@@ -14,7 +14,5 @@ namespace DAL.Entities
         public decimal Area { get; set; }
         public int ConstructionYear { get; set; }
         public string Condition { get; set; }
-
-        public IEnumerable<Department> Departments { get; set; }
     }
 }

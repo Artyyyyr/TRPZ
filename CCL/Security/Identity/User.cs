@@ -6,7 +6,21 @@ using System.Threading.Tasks;
 
 namespace CCL.Security.Identity
 {
-    internal class User
+    public abstract class User
     {
+        public int UserId { get; }
+        public string UserName { get; }
+        public int DepartmentId { get; }
+
+        protected string UserType { get; }
+
+        public User(int userId, string userName, int departmentId, string userType)
+        {
+            UserId = userId;
+            UserName = userName;
+            DepartmentId = departmentId;
+            UserType = userType;
+        }
     }
+
 }

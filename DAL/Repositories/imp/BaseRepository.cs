@@ -27,7 +27,7 @@ namespace DAL.Repositories.imp
             _set.Remove(item);
         }
         public IEnumerable<T> Find(
-        Func<T, bool> predicate,
+        Func<T, Boolean> predicate,
         int pageNumber = 0,
         int pageSize = 10)
         {
